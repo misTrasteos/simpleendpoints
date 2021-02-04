@@ -91,7 +91,7 @@ kind load docker-image yo/simpleendpoints:1.0.0-SNAPSHOT
 ## Environment variables in docker
 
 ```
-docker create -env JAVA_HOME=/opt/java/ -p 9001:8080 --name my-container yo/simpleendpoints:1.0.0-SNAPSHOT
+docker create --env JAVA_HOME=/opt/java/ -p 9001:8080 --name my-container yo/simpleendpoints:1.0.0-SNAPSHOT
 ```
 
 # RESTEasy JAX-RS
