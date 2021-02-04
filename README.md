@@ -88,6 +88,12 @@ If you want to use that image in a Kind cluster, you can use the following
 kind load docker-image yo/simpleendpoints:1.0.0-SNAPSHOT
 ```
 
+## Environment variables in docker
+
+```
+docker create -env JAVA_HOME=/opt/java/ -p 9001:8080 --name my-container yo/simpleendpoints:1.0.0-SNAPSHOT
+```
+
 # RESTEasy JAX-RS
 
 <p>A Hello World RESTEasy resource</p>
@@ -97,3 +103,5 @@ Guide: https://quarkus.io/guides/rest-json
 # Resources List
 
 * `GET /randomString` returns a json including a random String
+
+* `GET /environmentVariable/{environmentVariableName}` returns a json including a random String and the value of that environment variable.
