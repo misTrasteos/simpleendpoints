@@ -25,3 +25,6 @@ jobs:
 
       - name: mvn clean
         run: mvn clean
+
+      - name: mvn package
+        run: mvn package
