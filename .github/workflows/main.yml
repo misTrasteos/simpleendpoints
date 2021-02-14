@@ -22,6 +22,16 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Setup GraalVM Comunity Edition
+        uses: rinx/setup-graalvm-cd@v0.0.5
+        with:
+          graalvm-version: "20.2.0"
+          java-version: "java11"
+          native-image: "true"
+      
+      - name: show java version
+        run: java -version
 
       - name: mvn clean
         run: mvn clean
