@@ -105,3 +105,7 @@ Guide: https://quarkus.io/guides/rest-json
 * `GET /randomString` returns a json including a random String
 
 * `GET /environmentVariable/{environmentVariableName}` returns a json including a random String and the value of that environment variable.
+
+* `GET /slowBackEnd/{sleep}` returns a 200 waiting {sleep} milliseconds
+
+* `GET /httpResponseStatusCode/{httpResponseStatusCode}` returns {httpResponseStatusCode} HTTP Status Code
